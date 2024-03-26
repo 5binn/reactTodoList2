@@ -1,11 +1,14 @@
-import Nav from "../components/Nav";
+import Layout from "./Layout";
 
 function Home() {
 
     return (
     <div>
-        <Nav />
-        홈홈홈</div>
+        <Layout>
+        홈홈홈
+        </Layout>
+        </div>
+        
     );
 }
 
