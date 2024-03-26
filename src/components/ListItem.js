@@ -8,7 +8,6 @@ function ListItem({todo, onDelete, onCheck}) {
           <span>{todo.todo}</span>
           <button onClick={() => onDelete(todo.id)}>삭제</button>
         </li>
-  
       </div>
     );
   }

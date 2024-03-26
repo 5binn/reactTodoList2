@@ -1,16 +1,16 @@
-import Head from "./components/Head";
-import List from "./components/List";
-import CreateTodo from "./components/CreateTodo";
-import { useEffect, useRef, useState } from "react";
-import { BrowserRouter, Routes } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./page/Home";
+import TodoList from "./page/TodoList";
 
 function App() {
   
-  
   return (
     <BrowserRouter>
-    <Routes>
-    </Routes>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/todos" element={<TodoList />} />
+      </Routes>
     </BrowserRouter>
   );
 }

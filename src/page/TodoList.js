@@ -1,7 +1,7 @@
 
-import Head from "./components/Head";
-import List from "./components/List";
-import CreateTodo from "./components/CreateTodo";
+import Head from "../components/Head";
+import List from "../components/List";
+import CreateTodo from "../components/CreateTodo";
 import { useEffect, useRef, useState } from "react";
 
 
@@ -20,7 +20,7 @@ function TodoList() {
       if(e.target.text.value != '') {
         setTodos([...todos, {id: nextId.current, todo: e.target.text.value, completed: false}]);
         nextId.current++;
-      }
+      } 
       e.target.text.value = '';
     }; 
   

@@ -1,5 +1,8 @@
 function Home() {
-    return(<>홈홈홈</>)
+    
+    return (
+    <div>홈홈홈</div>
+    );
 }
 
 export default Home;

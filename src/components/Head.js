@@ -2,9 +2,7 @@
 function Head({count}) {
     return (
       <nav>
-        <div><a href="/home">홈</a></div>
-        
-        <div><a href="/todo">할 일</a></div>
+
         
         <div>
         <h1>할 일 목록</h1>
