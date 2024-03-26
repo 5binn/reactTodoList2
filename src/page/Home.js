@@ -1,10 +1,10 @@
+import Nav from "../components/Nav";
+
 function Home() {
 
     return (
     <div>
-        <div><a href="/">홈</a></div>
-        
-        <div><a href="/todos">할 일</a></div>
+        <Nav />
         홈홈홈</div>
     );
 }

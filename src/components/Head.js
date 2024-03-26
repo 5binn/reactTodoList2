@@ -1,10 +1,9 @@
+import Nav from "./Nav";
 
 function Head({count}) {
     return (
       <nav>
-        <div><a href="/">홈</a></div>
-        
-        <div><a href="/todos">할 일</a></div>
+        <Nav />
         
         <div>
         <h1>할 일 목록</h1>

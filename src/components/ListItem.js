@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 
 function ListItem({todo, onDelete, onCheck}) {
     return (
@@ -5,7 +6,7 @@ function ListItem({todo, onDelete, onCheck}) {
       <div>
         <li>
           <input type="checkbox" checked={todo.completed} onChange={() => onCheck(todo.id)}></input>
-          <span>{todo.todo}</span>
+          <Link to={`/todos/${todo.id}`}>{todo.todo}</Link>
           <button onClick={() => onDelete(todo.id)}>삭제</button>
         </li>
       </div>
